@@ -1,0 +1,86 @@
+.Form-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .Form{
+
+        width: 650px;
+        .title{
+            text-align: left;
+        }
+        h4{
+            font-weight: normal;
+        }
+        button{
+            color: #01A7FD;
+            cursor: pointer;
+        }
+        .save_form{
+            display: inline-block;
+            margin-top: 30px;
+            padding: 10px 20px;
+            width: 118px;
+            height: 44px;
+            background: #01A7FD;
+            border-radius: 100px;
+            border: 0;
+            color: white;
+        }
+        .input_block{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 56px;
+            padding: 10px 15px;
+            border: 1px solid #F1F1F1;
+            border-radius: 2px;
+            margin: 10px 0;
+            .label{
+                color: rgba(17, 17, 17, 0.48);
+                text-align: left;
+                font-size: 13px;
+            }
+            input{
+                font-size: 14px;
+                display: block;
+                border:0;
+            }
+        }
+        .Children{
+            margin-top: 33px;
+            .add_children{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 11px;
+                button{
+                    width: 204px;
+                    height: 44px;
+                    padding: 10px 20px;
+                    box-sizing: border-box;
+                    border: 2px solid #01A7FD;
+                    border-radius: 100px;
+                }
+                h4{
+                    display: inline-block;
+                    margin: 0;
+                }
+            }
+
+        }
+        .child{
+            display: flex;
+            .input_block{
+                width: 230px;
+                margin: 0 18px 0 0;
+            }
+            .delete{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: #01A7FD;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

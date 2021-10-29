@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from "./Header/Header";
+import Form from "./Form/Form";
+import Preview from "./Preview/Preview";
+import {connect} from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App({page,saved,profile}) {
+
+    return (
+        <div className="App">
+                <Header/>
+                {page==='Form'?
+                    <Form/>:
+                    <Preview saved={saved} profile={profile}/>
+                }
+        </div>
+    );
 }
-
-export default App;
+const mapStateToProps = (state) => {
+  return{
+      page:state.page,
+      saved:state.saved,
+      profile:state.profile
+  }
+}
+export default connect(mapStateToProps,{})(App);
