@@ -10,7 +10,7 @@ const Child = ({id,name,age,changeChildName,changeChildAge,deleteChildBtn}) => {
           </div>
           <div className={'input_block'}>
               <div className={'label'}>Возраст</div>
-              <input onChange={(e)=>{changeChildAge(id,e)}} value={age} type="text" placeholder={'Enter age...'}/>
+              <input onChange={(e)=>{changeChildAge(id,e)}} value={age} type="number" placeholder={'Enter age...'}/>
           </div>
           <div onClick={()=>{deleteChildBtn(id)}} className={'delete'}>Удалить</div>
       </div>

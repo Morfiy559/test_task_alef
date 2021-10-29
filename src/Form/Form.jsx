@@ -76,7 +76,7 @@ const Form = ({
                     </div>
                     <div className={'input_block'}>
                         <div className={'label'}>Возраст</div>
-                        <input onChange={changeAge} value={age} type="text"/>
+                        <input onChange={changeAge} value={age} type="number"/>
                     </div>
                 </section>
                 <section className={'Children'}>
