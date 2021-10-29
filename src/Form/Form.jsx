@@ -84,7 +84,7 @@ const Form = ({
                         <h4 className={'title'}>Дети (макс. 5)</h4>
                         <button className={'add_children_btn'} onClick={addChildBtn}>Добавить ребёнка</button>
                     </div>
-                    {children.map(child => <Child
+                    {children.length===0?<div>Нет детей</div>:children.map(child => <Child
                         key={child.id}
                         {...child}
                         changeChildName={changeChildName}
