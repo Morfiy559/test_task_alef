@@ -82,7 +82,7 @@ const Form = ({
                 <section className={'Children'}>
                     <div className={'add_children'}>
                         <h4 className={'title'}>Дети (макс. 5)</h4>
-                        <button onClick={addChildBtn}>Добавить ребёнка</button>
+                        <button className={'add_children_btn'} onClick={addChildBtn}>Добавить ребёнка</button>
                     </div>
                     {children.map(child => <Child
                         key={child.id}
